@@ -67,4 +67,4 @@ def signal_term_handler(signal, frame):
 if __name__ == '__main__':
     signal.signal(signal.SIGTERM, signal_term_handler)
 
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
